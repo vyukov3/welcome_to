@@ -1,0 +1,9 @@
+body{background: linear-gradient(rgb(183, 209, 209), rgb(255, 212, 106), rgb(250, 176, 176));}
+.questWrap{height: calc((100vh - 3*16px)/3);}
+.questWrap img{height: 100%; width: auto;}
+.icon{font-size: 70px; border: none; color: wheat;}
+.start{background-color:#fab0b0; border: #fab0d5;}
+.start:hover{background-color:#fad5b0; border: #fab0b0;}
+.modal-content{background: url(sources/modal_back.jpg), #00000085; background-size: cover; background-blend-mode: color;}
+.modal-title, .close, .close:hover, .modal-body{color:#fff;}
+.modal-body a{color:wheat}

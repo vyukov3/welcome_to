@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="cards">
+      <div class="container">
+        <div class="row my-2">
+          <div class="col-8">
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <img src="sources/Backs/agent.png" class="img-fluid backCard" data-index="0" alt=""><!--slideInUp-->
+              </div>
+              <div class="col-4">
+                <img src="sources/Backs/bis.png" class="img-fluid backCard" data-index="1" alt="">
+              </div>
+              <div class="col-4">
+                <img src="sources/Backs/green.png" class="img-fluid backCard" data-index="2" alt="">
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-4">
+                <img src="sources/Cards/c0.png" class="img-fluid numberCard" data-index="0" alt=""><!--flipOutX-->
+              </div>
+              <div class="col-4">
+                <img src="sources/Cards/c18.png" class="img-fluid numberCard" data-index="1" alt="">
+              </div>
+              <div class="col-4">
+                <img src="sources/Cards/c36.png" class="img-fluid numberCard" data-index="2" alt="">
+              </div>
+            </div>
+            <div class="row justify-content-around mt-2">
+              <div class="col conrols">
+                <i class="fas fa-caret-left icon stepPrev mr-3" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Предыдущий ход"></i>
+                <i class="fas fa-caret-right icon stepNext" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Следующий ход"></i>
+              </div>
+              <div class="col info text-right">
+                <a href="sources/reminder.pdf" target="_blank"><i class="fas fa-question icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Подсказка (в новой вкладке)"></i></a>
+                <a href="sources/rules.pdf" target="_blank" class="ml-3"><i class="fas fa-book icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Правила (в новой вкладке)"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col questWrap">
+                <img src="sources/Quests/easy/t1_0.png" class="img-fluid" data-index="0" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col questWrap mt-3">
+                <img src="sources/Quests/easy/t2_0.png" class="img-fluid" data-index="1" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col questWrap mt-3">
+                <img src="sources/Quests/easy/t3_0.png" class="img-fluid" data-index="2" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="startModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="text-ceter h4 mb-5">Добро пожаловать в <s>бич</s> веб-версию игры "Бумажные кварталы!"</p>
+                <p>Если вы впервые играете в данную игру, настоятельно рекомендую ознакомиться с <a href="sources/rules.pdf" target="_blank">правилами</a>.</p>
+                <p>Также, если у вас нет поля для игры, скачать его можно <a href="sources/scorepad.pdf" target="_blank">здесь</a>. В случае, если вы бережете природу, можно установить приложения:</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <img src="http://qrcoder.ru/code/?https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.bluecocker.welcome&10&0" class="img-fluid" border="0" title="Android">
+                <p class="text-center">Android</p>
+              </div>
+              <div class="col-6">
+                <img src="http://qrcoder.ru/code/?https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fwelcome-to-your-perfect-place%2Fid1358077007&10&0" class="img-fluid" border="0" title="iOS">
+                <p class="text-center">iOS</p>
+              </div>
+            </row>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              Немного об управлении: для смены карточек домов, кроме красивой стрелки внизу, можно еще нажать клавишу "Пробел". Также, чтобы перевернуть карточку задания, просто кликни на нее!
+            </div>
+          </div>
+          <div class="modal-footer px-0">
+            <button type="button" class="btn btn-primary w-100 mx-0 start">Поехали!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+    <script>
+      $(function(){
+        game.init();
+      })
+    </script>
+  </body>
+</html>
